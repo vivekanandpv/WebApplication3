@@ -20,6 +20,8 @@ namespace WebApplication3.Controllers
             _config = config;
             _service = service;
             _logger = loggerFactory.CreateLogger<BooksController>();
+
+            _logger.LogInformation("BooksController is created");
         }
 
         [HttpGet]
